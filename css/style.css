@@ -322,6 +322,47 @@ section { padding: 100px 0; position: relative; }
     color: var(--accent-cyan);
 }
 
+/* Signatories Search */
+.signatories-search {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto 40px;
+}
+.signatories-search input {
+    width: 100%;
+    padding: 14px 20px 14px 48px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.signatories-search input::placeholder {
+    color: var(--text-muted);
+}
+.signatories-search input:focus {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+.signatories-search .search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+    transition: color 0.3s ease;
+}
+.signatories-search input:focus + .search-icon {
+    color: var(--accent-cyan);
+}
+.sig-card.hidden {
+    display: none;
+}
+
 /* ============================================
    MODAL
    ============================================ */

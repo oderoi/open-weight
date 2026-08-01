@@ -179,6 +179,10 @@
                 <p class="section-desc">Every company and organization that put their name on the line. Click any card to learn more.</p>
             </div>
 
+            <div class="signatories-search">
+                <input type="text" id="sigSearch" placeholder="Search company name..." autocomplete="off">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
             <div class="signatories-grid">
                 <div class="sig-card" data-company="1789 Capital" data-domain="1789capital.com" data-abbr="17" data-color="#1e3a5f">
                     <div class="sig-logo-wrap">
@@ -2879,8 +2883,13 @@
                 </div>
 
                 <div class="modal-section">
-                    <span class="modal-label">Models & Services</span>
-                    <p class="modal-text" id="modalModels">Models and services go here.</p>
+                    <span class="modal-label">Services</span>
+                    <p class="modal-text" id="modalServices">Services go here.</p>
+                </div>
+
+                <div class="modal-section" id="modalModelsSection">
+                    <span class="modal-label">Models</span>
+                    <p class="modal-text" id="modalModels">Models go here.</p>
                 </div>
 
                 <a href="#" class="btn btn-primary modal-cta" id="modalVisit" target="_blank" rel="noopener">
